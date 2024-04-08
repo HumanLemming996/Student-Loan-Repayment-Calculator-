@@ -45,8 +45,8 @@ def runner():
     else:
         st.subheader(f"Paid in :blue[{years}] years")
     st.subheader("On average:")
-    st.markdown(f" :orange[£{round(total / 40):,}] per year")
-    st.markdown(f" :orange[£{round(total / (40 * 12)):,}] per month")
+    st.markdown(f" :orange[£{round(total / years):,}] per year")
+    st.markdown(f" :orange[£{round(total / (years * 12)):,}] per month")
     st.markdown(f":orange[{round((total / initial_loan) * 100)}%] of the loan amount")
 
 if st.button("Calculate"):
